@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+class lab_task_6{
+    public static void main(String[] args){
+        int a;
+        boolean i = false;
+        Scanner sc = new Scanner(System.in);
+        //Printing out the options and Taking user input.
+        while(true)
+{
+        System.out.println("Welcome To Our Restaurant! Press The Following Codes For Menu Item Prices: \n1) Chicken Borgir\n2) Beef Borgir\n3) Cheese Borgir\n4) Pizza\n5) Fries");
+        a = sc.nextInt();
+        //Using switch to display price for the selected item.
+           
+
+        switch(a){
+           
+            case 1:
+                System.out.println("special karachi karahi per kg  = Rs.3000");
+                break;
+            case 2:
+                System.out.println("Beef karahi per kg  = Rs.2000 ");
+                break;
+            case 3:
+                System.out.println("mutton karahi per kg  = Rs.2400 per kg ");
+                break;
+            case 4:
+                System.out.println("white chicken karahi per kg = Rs.2000 per kg ");
+                break;
+            case 5:
+                System.out.println("chicken karahi per kg  = Rs.1400 pr kg ");
+                break;
+            default:
+                System.out.println("Please Select Items From 1 to 5");
+             System.exit(0);
+        }
+}
+    }
+}
